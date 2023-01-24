@@ -45,6 +45,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'bootsnap', require: false
 gem 'dci', github: 'techery/dci'
 gem 'rubocop', '~> 1.44'
+gem 'httparty', '~> 0.21.0'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
