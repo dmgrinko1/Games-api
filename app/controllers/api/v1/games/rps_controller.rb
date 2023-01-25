@@ -3,7 +3,7 @@
 module Api
   module V1
     module Games
-      class RpsController < ActionController::Base
+      class RpsController < Api::BaseController
         def play
           render json: ::Games::Rps::MatchMaking.perform(user_element)
         end
