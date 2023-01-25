@@ -10,7 +10,7 @@ module Games
       def perform
         return true if Games::Rps::MatchMaking::RULES.key?(@user_element.to_sym)
 
-        raise 'SomeErrorTBD'
+        raise ArgumentError, "Invalid element: #{@user_element} is not included in the RULES"
       end
     end
   end
